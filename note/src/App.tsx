@@ -1,9 +1,6 @@
+import MainPage from "./pages/mainPage";
 function App() {
-  return (
-    <div>
-      <h1 className="text-purple-700">Hakan Gülmek</h1>
-    </div>
-  );
+  return <MainPage />;
 }
 
 export default App;
