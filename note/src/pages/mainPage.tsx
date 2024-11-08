@@ -1,4 +1,5 @@
 import NotePage from "./notePage";
+import ThreePage from "./threePage";
 function mainPage() {
   return (
     <div className="h-[728px] w-[1534px] bg-[#efd7b4d4]">
@@ -16,7 +17,9 @@ function mainPage() {
         <div className="h-[524px] w-[460px] rounded-lg bg-[#EFBFA8] p-2">
           <NotePage />
         </div>
-        <div className="h-[524px] w-80 rounded-lg bg-[#EFBFA8]">Gülmek</div>
+        <div className="h-[524px] w-80 rounded-lg bg-[#EFBFA8]">
+          <ThreePage />
+        </div>
       </div>
     </div>
   );

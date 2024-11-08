@@ -566,12 +566,12 @@ video {
   height: 728px;
 }
 
-.h-20 {
-  height: 5rem;
+.h-full {
+  height: 100%;
 }
 
-.h-36 {
-  height: 9rem;
+.max-h-64 {
+  max-height: 16rem;
 }
 
 .w-80 {
@@ -584,18 +584,6 @@ video {
 
 .w-\[460px\] {
   width: 460px;
-}
-
-.w-16 {
-  width: 4rem;
-}
-
-.w-\[400px\] {
-  width: 400px;
-}
-
-.w-\[700px\] {
-  width: 700px;
 }
 
 .w-full {
@@ -614,12 +602,12 @@ video {
   justify-content: space-between;
 }
 
-.rounded-lg {
-  border-radius: 0.5rem;
+.overflow-y-auto {
+  overflow-y: auto;
 }
 
-.rounded {
-  border-radius: 0.25rem;
+.rounded-lg {
+  border-radius: 0.5rem;
 }
 
 .bg-\[\#EFBFA8\] {
@@ -631,11 +619,6 @@ video {
   background-color: #efd7b4d4;
 }
 
-.bg-blue-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
-}
-
 .bg-purple-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(126 34 206 / var(--tw-bg-opacity));
@@ -645,14 +628,8 @@ video {
   padding: 0.5rem;
 }
 
-.px-80 {
-  padding-left: 20rem;
-  padding-right: 20rem;
-}
-
-.py-6 {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -660,30 +637,31 @@ video {
   padding-right: 1rem;
 }
 
+.px-80 {
+  padding-left: 20rem;
+  padding-right: 20rem;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.px-2 {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-}
-
-.pt-8 {
-  padding-top: 2rem;
+.py-6 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
 .pt-2 {
   padding-top: 0.5rem;
 }
 
-.pb-4 {
-  padding-bottom: 1rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
+}
+
+.pt-8 {
+  padding-top: 2rem;
 }
 
 .text-center {
@@ -695,14 +673,14 @@ video {
   line-height: 2rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .text-lg {
@@ -729,9 +707,24 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.hover\:bg-blue-700:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+.scrollbar-custom::-webkit-scrollbar {
+  width: 8px;
+  /* Kaydırma çubuğu genişliği */
+}
+
+.scrollbar-custom::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-custom::-webkit-scrollbar-thumb {
+  background-color: #8b5cf6;
+  /* Mor renk */
+  border-radius: 8px;
+  padding-left: 2px;
+  border: 2px solid transparent;
+  /* Kenar boşluğu oluşturur */
+  box-sizing: border-box;
+  /* Kenar boşluğunu çubuğun içine dahil eder */
 }
 
 .hover\:bg-purple-950:hover {

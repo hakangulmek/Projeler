@@ -39,18 +39,20 @@ function NotePage() {
       </div>
       <div>
         <h2 className="text-center text-2xl text-purple-950">Notlar</h2>
-        <List className="pt-4">
-          {noteList.map((n, index) => (
-            <ListItem key={index} divider>
-              <ListItemText
-                primary={n}
-                primaryTypographyProps={{
-                  className: "text-lg text-purple-950",
-                }}
-              />
-            </ListItem>
-          ))}
-        </List>
+        <div className="w-full h-full">
+          <List className="pt-4 overflow-y-auto max-h-64 scrollbar-custom">
+            {noteList.map((n, index) => (
+              <ListItem key={index} divider>
+                <ListItemText
+                  primary={n}
+                  primaryTypographyProps={{
+                    className: "text-lg text-purple-950",
+                  }}
+                />
+              </ListItem>
+            ))}
+          </List>
+        </div>
       </div>
     </div>
   );
